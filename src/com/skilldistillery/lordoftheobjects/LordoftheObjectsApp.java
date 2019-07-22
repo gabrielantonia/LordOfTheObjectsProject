@@ -41,14 +41,14 @@ public class LordOfTheObjectsApp {
 		Liquor.setremainingHealth(15);
 		Beer.setremainingHealth(5);
 		Wine.setremainingHealth(10);
-		String playerName= null;
-//		String playerSex = null;
+		String playerName= "Hero";
+		String playerSex = null;
 		System.out.println("What's your name, champ?");
-		playerName = scan.nextLine();
+		playerName = scan.next();
 		player.setName(playerName);
-//		System.out.println("Female or Male? Y'know, for cover charge.");
-//		playerSex = scan.nextLine();
-//		player.setSex(playerSex);  //Needs debugging
+		System.out.println("Female or Male? Y'know, for cover charge.");
+		playerSex = scan.next();
+		player.setSex(playerSex);  //Needs feature adding
 	}
 
 	public static void Intro() {
