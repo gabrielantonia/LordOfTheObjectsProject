@@ -17,3 +17,7 @@ This project is a responsive text Hero adventure game with a unique twist played
 * Furthering reinforcement of working knowledge on for loops, if, while, switches'.
 * First project incorporating Arrays, and Objects Oriented design.
 * First major project developed with Peer Programming; developed successful methods of working with peer remotely and in person; utilized version control through git/github; maintained communications through Slack; utilized Pair Programming for local joint programming efficiency.
+## Areas of Improvement
+* Extended drink options, subtypes for every type of beverage.
+* Gender specific storylines
+* Random chance of helpful items after finishing a beverage.
