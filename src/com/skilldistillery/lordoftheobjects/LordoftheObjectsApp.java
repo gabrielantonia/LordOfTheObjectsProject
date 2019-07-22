@@ -62,7 +62,7 @@ public class LordOfTheObjectsApp {
 
 		String[] options = { "1. Have a bottle of Beer.", "2. Have a bottle of Wine.", "3. Have a bottle of liquor." };
 
-		while (Beer.getremainingHealth() > 0 || Wine.getremainingHealth() > 0 || Liquor.getremainingHealth() > 0) {
+		while (options[0] !=  null || options[1] !=  null || options[2] !=  null ) {
 			System.out.println("1. Have a bottle of Beer." + "\n" + "2. Have a bottle of Wine." + "\n"
 					+ "3. Have a bottle of liquor.");
 			;
@@ -143,7 +143,7 @@ public class LordOfTheObjectsApp {
 		while (true) {
 			methodOfIngest();
 			Wine.setremainingHealth(Wine.getremainingHealth() - Alcohol.getAlcoholDamage());
-			System.out.println("Bottle Level: " + Wine.getremainingHealth() + "/6");
+			System.out.println("Bottle Level: " + Wine.getremainingHealth() + "/10");
 			System.out.println(
 					"The wine is a cheap off brand and you know you will regret it in the morning but you drink it down anyways. Good life choices "
 							+ "\nhave never been your forte.\n");
@@ -152,7 +152,7 @@ public class LordOfTheObjectsApp {
 			}
 			methodOfIngest();
 			Wine.setremainingHealth(Wine.getremainingHealth() - Alcohol.getAlcoholDamage());
-			System.out.println("Bottle Level: " + Wine.getremainingHealth() + "/6");
+			System.out.println("Bottle Level: " + Wine.getremainingHealth() + "/10");
 			System.out.println(
 					"The color of the wine reminds you of rancid watermelon and it smells like gym socks, you suck it down regardless. "
 							+ "\nYou have flashbacks of the many socks that were shoved in your mouth by Tommy Shoback in the 8th grade during P.E.. You "
@@ -164,7 +164,7 @@ public class LordOfTheObjectsApp {
 			}
 			methodOfIngest();
 			Wine.setremainingHealth(Wine.getremainingHealth() - Alcohol.getAlcoholDamage());
-			System.out.println("Bottle Level: " + Wine.getremainingHealth() + "/6");
+			System.out.println("Bottle Level: " + Wine.getremainingHealth() + "/10");
 			System.out.println(
 					"Your stomach is turning from the bitter swill but you drink on, continuing to fight your metaphorical windmill with all your "
 							+ "\nmight for that glorious prize at the end of the dark tunnel..no bar tab.\n ");
@@ -179,7 +179,7 @@ public class LordOfTheObjectsApp {
 		while (true) {
 			methodOfIngest();
 			Liquor.setremainingHealth(Liquor.getremainingHealth() - Alcohol.getAlcoholDamage());
-			System.out.println("Bottle Level: " + Liquor.getremainingHealth() + "/7");
+			System.out.println("Bottle Level: " + Liquor.getremainingHealth() + "/15");
 			System.out.println(
 					"Liquor, sweet nectar of the Gods. The Chosen One. The only escape from the humility and mundanity of your pathetic existence. "
 							+ "\nYou take your first sip gingerly, a weary yet welcoming embrace to a dear old friend.\n");
@@ -188,7 +188,7 @@ public class LordOfTheObjectsApp {
 			}
 			methodOfIngest();
 			Liquor.setremainingHealth(Liquor.getremainingHealth() - Alcohol.getAlcoholDamage());
-			System.out.println("Bottle Level: " + Liquor.getremainingHealth() + "/7");
+			System.out.println("Bottle Level: " + Liquor.getremainingHealth() + "/15");
 			System.out.println(
 					"As you drink the bottle you begin to forget all the many mistakes that have led you to this horrid little pub. Your thoughts are "
 							+ "\nfading out as your view swims in front of your face.\n");
@@ -197,7 +197,7 @@ public class LordOfTheObjectsApp {
 			}
 			methodOfIngest();
 			Liquor.setremainingHealth(Liquor.getremainingHealth() - Alcohol.getAlcoholDamage());
-			System.out.println("Bottle Level: " + Liquor.getremainingHealth() + "/7");
+			System.out.println("Bottle Level: " + Liquor.getremainingHealth() + "/15");
 			System.out.println(
 					"You are nearing completion, you are going to get through this, you are going to show Sarah Wilson why she should have chose you "
 							+ "\nand not Tommy Shoback, with his Lamborghini Countach and summer home in the Hamptons. But You have something more than Tommy Shoback "
@@ -232,8 +232,8 @@ public class LordOfTheObjectsApp {
 		case 1:
 			int sipDam;
 			int alcDam;
-			sipDam = 0 + (int) (Math.random() * 2) + 1;
-			alcDam = 0 + (int) (Math.random() * 2) + 1;
+			sipDam = (int) (Math.random() * 1 + 1);
+			alcDam = (int) (Math.random() * 1 + 1);
 			Alcohol.setAlcoholDamage(alcDam);
 			Hero.setremainingHealth(Hero.getremainingHealth() - sipDam);
 			System.out.println(Hero.getName() + " health: " + Hero.getremainingHealth());
@@ -241,8 +241,8 @@ public class LordOfTheObjectsApp {
 		case 2:
 			int swigDam;
 			int alcDam1;
-			swigDam = 0 + (int) (Math.random() * 3 + 1);
-			alcDam1 = 0 + (int) (Math.random() * 3 + 1);
+			swigDam = (int) (Math.random() * 2 + 1);
+			alcDam1 = (int) (Math.random() * 3 + 1);
 			Hero.setremainingHealth(Hero.getremainingHealth() - swigDam);
 			Alcohol.setAlcoholDamage(alcDam1);
 			System.out.println(Hero.getName() + " health: " + Hero.getremainingHealth());
@@ -250,8 +250,8 @@ public class LordOfTheObjectsApp {
 		case 3:
 			int chugDam;
 			int alcDam2;
-			chugDam = 0 + (int) (Math.random() * 4 + 1);
-			alcDam2 = 0 + (int) (Math.random() * 4 + 1);
+			chugDam = (int) (Math.random() * 4 + 1);
+			alcDam2 = (int) (Math.random() * 5 + 1);
 			Alcohol.setAlcoholDamage(alcDam2);
 			Hero.setremainingHealth(Hero.getremainingHealth() - chugDam);
 			System.out.println(Hero.getName() + " health: " + Hero.getremainingHealth());
