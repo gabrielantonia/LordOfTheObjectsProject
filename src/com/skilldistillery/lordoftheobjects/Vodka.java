@@ -1,6 +1,5 @@
 package com.skilldistillery.lordoftheobjects;
 
-public class Character {
-
+public class Vodka extends Liquor {
 
 }
