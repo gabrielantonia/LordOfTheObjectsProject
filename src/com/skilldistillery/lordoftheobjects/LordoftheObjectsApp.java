@@ -2,7 +2,7 @@ package com.skilldistillery.lordoftheobjects;
 
 import java.util.Scanner;
 
-public class LordOfTheObjectsApp {
+public class LordOfTheObjectsApp2 {
 	public static final Scanner scan = new Scanner(System.in);
 
 	public static void main(String[] args) {
