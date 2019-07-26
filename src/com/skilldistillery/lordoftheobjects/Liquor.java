@@ -1,12 +1,15 @@
 package com.skilldistillery.lordoftheobjects;
 
 public class Liquor extends Alcohol {
-	private static int remainingHealth = 15 ;
+//find differentiators for each alcohol family
+	
+	public Liquor(int remainingHealth, int alcoholDamage) {
+		super(remainingHealth, alcoholDamage);
+	}
 
-	public static int getremainingHealth() {
-		return remainingHealth;
+	public Liquor() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	public static void setremainingHealth(int remainingHealth) {
-		Liquor.remainingHealth = remainingHealth;
-	}
+
 }

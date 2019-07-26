@@ -1,28 +1,34 @@
 package com.skilldistillery.lordoftheobjects;
 
 public class Hero {
-	private static String name;
-	private static String sex;
-	public static int remainingHealth = 19;
+	protected String name;
+	protected String sex;
+	protected int remainingHealth;
 	
 	
-	public static String getName() {
+	public Hero(String name, String sex, int remainingHealth) {
+		super();
+		this.name = name;
+		this.sex = sex;
+		this.remainingHealth = remainingHealth;
+	}
+	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
-		Hero.name = name;
+		this.name = name;
 	}
-	public static String getSex() {
+	public String getSex() {
 		return sex;
 	}
 	public void setSex(String sex) {
-		Hero.sex = sex;
+		this.sex = sex;
 	}
-	public static int getremainingHealth() {
+	public int getremainingHealth() {
 		return remainingHealth;
 	}
-	public static void setremainingHealth(int remainingHealth) {
-		Hero.remainingHealth = remainingHealth;
+	public void setremainingHealth(int remainingHealth) {
+		this.remainingHealth = remainingHealth;
 	}
 	
 }

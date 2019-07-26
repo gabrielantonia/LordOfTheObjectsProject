@@ -1,21 +1,32 @@
 package com.skilldistillery.lordoftheobjects;
 
-
 public class Alcohol {
-	private static int remainingHealth;
-	private static int alcoholDamage;
-	
-	public static int getAlcoholDamage() {
+	protected int remainingHealth;
+	protected int alcoholDamage;
+
+	public int getAlcoholDamage() {
 		return alcoholDamage;
 	}
-	public static void setAlcoholDamage(int alcoholDamage) {
-		Alcohol.alcoholDamage = alcoholDamage;
+
+	public void setAlcoholDamage(int alcoholDamage) {
+		this.alcoholDamage = alcoholDamage;
 	}
-	public static int getremainingHealth() {
+
+	public int getremainingHealth() {
 		return remainingHealth;
 	}
-	public static void setremainingHealth(int remainingHealth) {
-		Alcohol.remainingHealth = remainingHealth;
+
+	public void setremainingHealth(int remainingHealth) {
+		this.remainingHealth = remainingHealth;
+	}
+
+	public Alcohol(int remainingHealth, int alcoholDamage) {
+		this.remainingHealth = remainingHealth;
+		this.alcoholDamage = alcoholDamage;
+	}
+
+	public Alcohol() {
+		// TODO Auto-generated constructor stub
 	}
 
 }
