@@ -1,5 +1,5 @@
 ## LORD OF THE OBJECTS PROJECT - **PUB HERO**
-Week 2 Project for Skill Distillery Java bootcamp... Definitely the coolest program anyone has ever made.
+Week 2 Project for Skill Distillery Java bootcamp
 ## Overview
 This project is a responsive text Hero adventure game with a unique twist played entirely through the console program of your PC/MAC. The program was designed primarily to show off development of skills in Arrays and Object Oriented Programming as well as a first real program designed via Peer Programming. The program was a collaborative effort between myself and a classmate Link: https://github.com/blueohsix . It utilizes player choices to tell a humorous short story with interactive "combat". Attacks are randomized giving players a chance of defeat with a unique ending.
 ## Technologies Used
